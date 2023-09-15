@@ -8,7 +8,7 @@ module CarrierWave
         c = Struct.new(:sharpen_mask, :sharpen_scale, :allowed_formats).new
         c.sharpen_mask = [ [ -1, -1, -1 ], [ -1, 24, -1 ], [ -1, -1, -1 ] ]
         c.sharpen_scale = 16
-        c.allowed_formats = %w(jpeg jpg png)
+        c.allowed_formats = %w(jpeg jpg png webp)
         c
       end
       @config
